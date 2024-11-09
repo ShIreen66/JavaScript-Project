@@ -8,3 +8,20 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+section {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.element {
+    cursor: pointer;
+    width: 100%;
+    height: 20vh;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
