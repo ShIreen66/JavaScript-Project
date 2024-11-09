@@ -1,9 +1,15 @@
 const body = document.querySelector("body");
-console.log(body); // jab kisi bhi key ko dabate hai to key up and down ho jate hai
 body.addEventListener("keydown", (e) => {
-    const element = document.querySelector('${e.key}');
-    element.style.backgroundColor = "black"
-    element.style.
+    const element = document.querySelector(`.${e.key}`);
+    element.style.backgroundColor = "white";
+    element.style.color = "black";
     element.childNodes[1].play();
-    console.log(e.key);
+});
+
+body.addEventListener("keyup", (e) => {
+    const element = document.querySelector(`.${e.key}`);
+    element.style.backgroundColor = "black";
+    element.style.color = "white";
+    element.childNodes[1].pause();
+    element.childNodes[1].load();
 });
